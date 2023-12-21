@@ -18,8 +18,3 @@
 #     'start_date':datetime(2023,12,13),
 # }
 
-
-
-
-  git config --global user.email "jdada371@gmail.com"/
-  git config --global user.name "joshua-dada-mayowa"
