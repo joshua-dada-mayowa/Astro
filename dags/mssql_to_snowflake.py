@@ -79,7 +79,7 @@ with DAG('mssql_to_snowflake5', default_args=default_args, schedule_interval='@d
 
         mssql = MsSqlHook(mssql_conn_id=mssql_conn_id)
         records = mssql.get_records(f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE table_name = '{table}' AND table_schema = '{SCHEMA}'")
-        columns_mapping = [(row[0], row[0]) for row in records]
+        columns_mapping = [{'source_column': row[0], 'target_column': row[0]} for row in records] 
         primary_key_columns = get_primary_key_columns(table)
         target_conflict_columns = ', '.join(primary_key_columns)
 
