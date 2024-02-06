@@ -23,19 +23,13 @@ Astro/
 
 ### Directories and Files:
 
-- **.astro**: Configuration files for the Astro CLI.
 - **dags/**: Contains the Airflow DAGs for data migration.
   - **dag.py**: Main DAG definition.
   - **full_load.py**: DAG for full data load.
   - **mssql_to_snowflake.py**: DAG for migrating data from MSSQL to Snowflake.
-- **tests/**: Directory for project tests.
-- **.airflowignore**: Specifies files and directories to be ignored by Airflow.
-- **.dockerignore**: Specifies files and directories to be ignored by Docker.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
+- **tests/**: Contains test scripts for the project.
 - **Dockerfile**: Configuration for building the Docker image.
-- **README.md**: Project documentation.
-- **Stop-Process**: Script for stopping the migration process.
-- **packages.txt**: List of required Python packages.
+- **packages.txt**: Lists packages to be installed in the Docker image.
 - **requirements.txt**: Python dependencies for the project.
 
 ## Detailed Description of DAGs
@@ -91,14 +85,3 @@ To use the Astro Data Migration Project for migrating data from MSSQL to Snowfla
 
 Contributions to the Astro Data Migration Project are welcome! If you have any suggestions, find issues, or want to contribute code, please open an [issue](https://github.com/joshua-dada-mayowa/Astro/issues) or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any inquiries or support, please contact the project maintainer, [Joshua Dada Mayowa](mailto:your-email@example.com).
-
----
-
-Feel free to customize this documentation further to suit your project's specific details and requirements.
